@@ -103,7 +103,7 @@ public:
         return sum;
     }
     static Matrix rotation2D(float angle);
-    static Matrix rotation3D(float theta, float phi);
+    static Matrix rotation3D(char axis,float theta);
 
 private:
     int numSwap; //This counter keeps track of how many times the rows of the matrix have been swapped
