@@ -217,6 +217,18 @@ float Spectral::det(Matrix M) {
     return d;
 }
 
+float Spectral::trace(Matrix M) {
+    if (M.rowNum != M.colNum) {
+        cout << "Error! Matrix must be square!" << endl;
+        return INT_MIN; //How to manage internal errors?
+    }
+    float sum = 0;
+    for (int i = 0; i < M.rowNum; i++) {
+        sum += M[i][i];
+    }
+    return sum;
+}
+
 Matrix Spectral::roundMatrix(Matrix A) {
     int n = A.rowNum;
     int m = A.colNum;

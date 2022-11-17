@@ -18,6 +18,7 @@ public:
     static Vector pivot(Matrix M); //TODO
     static Vector linsolve(Matrix M, Vector b); //TODO, think about infinite number of solutions
     static float det(Matrix M); //DONE
+    static float trace(Matrix M); //DONE
     static Vector eigenValue(Matrix M); //TODO
     static Vector solve(Matrix A, Vector b); //TODO: Solve the linear system Ax=b
     static Matrix inverse(Matrix A); //DONE: Use Gauss-Jordan, not cofactors too expensive
