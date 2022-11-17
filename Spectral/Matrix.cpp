@@ -75,3 +75,6 @@ Matrix Matrix::rotation2D(float angle) {
 }
 
 
+Matrix Matrix::rotation3D(float theta, float phi) {
+
+}

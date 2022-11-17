@@ -14,7 +14,6 @@ public:
     Matrix(vector<vector<float>> _data);
     Matrix(int r, int c);
 
-    int numSwap; //This counter keeps track of how many times the rows of the matrix have been swapped
     int colNum;
     int rowNum;
     vector<vector<float>> data;
@@ -104,9 +103,10 @@ public:
         return sum;
     }
     static Matrix rotation2D(float angle);
+    static Matrix rotation3D(float theta, float phi);
 
 private:
-
+    int numSwap; //This counter keeps track of how many times the rows of the matrix have been swapped
 };
 
 #endif // MATRIX_H
