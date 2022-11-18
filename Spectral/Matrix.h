@@ -106,6 +106,7 @@ public:
     static Matrix rotation3D(char axis,float theta);
 
 private:
+    friend class Spectral; //Fix this, it makes no sense
     int numSwap; //This counter keeps track of how many times the rows of the matrix have been swapped
 };
 

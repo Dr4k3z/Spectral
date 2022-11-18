@@ -92,4 +92,5 @@ Matrix Matrix::rotation3D(char axis,float theta) {
         R[1][0] = sin(theta); R[1][1] = cos(theta); R[1][2] = 0;
         R[2][0] = 0; R[2][1] = 0; R[2][2] = 1;
     }
+    return R;
 }
